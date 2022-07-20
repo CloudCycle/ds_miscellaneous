@@ -1,0 +1,21 @@
+name: miscellaneous
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8 # To ensure compatibility with most packages  (including ds_tools)
+  - pip
+  - jupyterlab
+  - scikit-learn>=1.0
+  - seaborn
+  - pandas
+  - matplotlib
+  - numpy
+  - scipy
+  - dask
+  - holoviews
+  - pip:
+    - boto3
+    - awswrangler
+
+prefix: /home/prateek/miniconda3/envs/miscellaenous

@@ -11,7 +11,7 @@ def get_all_items_from_table(table_name:str)->pd.DataFrame:
     items = response['Items']
     while 'LastEvaluatedKey' in response:
         print(response['LastEvaluatedKey'])
-        response = calibtaion_table.scan(ExclusiveStartKey=response['LastEvaluatedKey'])
+        response = table.scan(ExclusiveStartKey=response['LastEvaluatedKey'])
         items.extend(response['Items'])
         
     return pd.DataFrame(items)

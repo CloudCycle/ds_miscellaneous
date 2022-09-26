@@ -71,8 +71,8 @@ def plot_fundamentals(df):
     
 if __name__ == '__main__':
     
-    start_date = np.datetime64("2022-09-05")
-    end_date = np.datetime64("2022-09-10")
+    start_date = np.datetime64("2022-09-12")
+    end_date = np.datetime64("2022-09-17")
     
     trucks = ('FJ22PXW', 'FJ22PXV', 'FJ22PXU', 'FJ22PXY', 'FJ22PXO', 'FJ22PXP', 'FJ22PXX', 'FJ22PXL')
     
